@@ -28,6 +28,7 @@ We welcome contributions from the community to improve the Cryptobot Assistant. 
 - OpenAI for providing the GPT-3.5 model used in the Cryptobot Assistant.
 - Bootstrap for the responsive design elements.
 - Icons provided by Material Icons.
+- Some images from Youtube Channels.
 
 ## Contact
 For questions, feedback, or support, please contact:
