@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatGPT Clone in JavaScript</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+
+    
+<!-- Navigation Bar -->
+<nav class="nav">
+    <div class="nav-left">
+        <a href="#" class="nav-logo">BLOCKCHAIN DIALOGISXX</a>
+        <ul class="nav-menu">
+            <li><a href="#" onclick="refreshPage()">Home ⌂</a></li>
+            <li class="dropdown">
+                <a href="#">Buy 🛒▾ </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Bitcoin</a></li>
+                    <li><a href="#">Ethereum</a></li>
+                    <li><a href="#">Litecoin</a></li>
+                    <li><a href="#">Shiba Inu</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Help 🔑▾ </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Solidity-Docs</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="https://portal.1inch.dev/documentation/authentication">Links 🔗▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Communities</a></li>
+                    <li><a href="#">Documentations</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Contacts🗄️▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">E-mail</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Dropdown Description -->
+<div class="dropdown-description hidden" id="dropdown-description">
+    <h1>Welcome to CryptoGuide</h1>
+    <p>CryptoGuide is your friendly digital companion for navigating the world of cryptocurrencies and blockchain technology.<br>
+        Whether you're a seasoned investor or a curious newcomer, CryptoGuide is here to provide you with insightful guidance, answer your burning questions, and keep you updated on the latest trends in the crypto space.
+
+        With CryptoGuide, you can explore topics such as Bitcoin, Ethereum, decentralized finance (DeFi), smart contracts, and much more. From understanding complex concepts to staying informed about market trends, CryptoGuide is your go-to source for all things crypto.
+        
+       
+    </p>
+    <!-- Add more content here as needed -->
+</div>
+
+<div class="background-animationn">
+    <!-- Meteor elements -->
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <div class="meteor1"></div>
+    <!-- Add more meteor elements as needed -->
+  </div>
+  
+    <!-- Additional containers for flowing animation -->
+    <div class="flowing-container one"></div>
+    <div class="flowing-container two"></div>
+    <div class="flowing-container three"></div>
+   <!-- <div class="flowingg-container one"></div>
+    <div class="flowingg-container two"></div>
+    <div class="flowingg-container three"></div>-->
+    <div class="flowing-containerr one"></div>
+    <div class="flowing-containerr two"></div>
+    <div class="flowing-containerr three"></div>
+    <div class="fflowing-container one"></div>
+    <div class="fflowing-container two"></div>
+    <div class="fflowing-container three"></div>
+    <div class="fllowing-container one"></div>
+    <div class="fllowing-container two"></div>
+    <div class="fllowing-container three"></div>
+    <div class="floowing-container one"></div>
+    <div class="floowing-container two"></div>
+    <div class="floowing-container three"></div>
+
+
+    <!-- 10 Containers with Different Animations -->
+    <div class="container" style="animation-name: pulse; position: absolute; top: 30px; left: 10px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3200px;right: 10%;"></div>
+    <div class="container" style="animation-name: rotate; position: absolute; top: 100px; left: 10px;"></div>
+    <div class="container" style="animation-name: scaleUp; position: absolute; top: 1500px; left: 15px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 2000px; left: 70%;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3000px; left: 25%;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 2900px; left: 300px;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 29900px; left: 350px;"></div>
+    <div class="container" style="animation-name: pulse; position: absolute; top: 29000px; left: 400px;"></div>
+    <div class="container" style="animation-name: spin; position: absolute; top: 1000px; left: 650px;"></div>
+
+    <div class="container" style="animation-name: pulse; position: absolute; top: 60px; left: 100px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3750px;right: 0;"></div>
+    <div class="container" style="animation-name: rotate; position: absolute; top: 1000px; left: 200px;"></div>
+    <div class="container" style="animation-name: scaleUp; position: absolute; top: 1500px; left: 1500px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 2300px; left: 90%;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3000px; left: 38%;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 2300px; left: 500px;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 3000px; left: 600px;"></div>
+    <div class="container" style="animation-name: pulse; position: absolute; top:2200px; left: 220px;"></div>
+    <div class="container" style="animation-name: spin; position: absolute; top: 3000px; left: 2000px;"></div>
+    
+    <div class="container" style="animation-name: pulse; position: absolute; top: 300px; left: 100px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3500px;right: 20%;"></div>
+    <div class="container" style="animation-name: rotate; position: absolute; top: 199px; left: 8000px;"></div>
+    <div class="container" style="animation-name: scaleUp; position: absolute; top: 1550px; right: 15px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 2700px; left: 70%;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3700px; right: 70%;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3500px; left: 90%;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 1350px; left: 25%;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 1350px; left: opx;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 1350px; left: 500px;"></div>
+    <div class="container" style="animation-name: pulse; position: absolute; top: 1350px; left: 400px;"></div>
+    <div class="container" style="animation-name: spin; position: absolute; top: 2100px; left: 0%;"></div>
+
+    <div class="container" style="animation-name: pulse; position: absolute; top: 60px; left: 200px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 70%;right: 30px; bottom: 35px;"></div>
+    <div class="container" style="animation-name: rotate; position: absolute; top: 1000px; left: 400px;"></div>
+    <div class="container" style="animation-name: scaleUp; position: absolute; top: 1500px; left: 1750px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 2300px; left: 110%;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 2300px; left: 68%;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 2750px; left: 700px;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 27500px; left: 800px;"></div>
+    <div class="container" style="animation-name: bounce; position: absolute; top: 3400px; left: 600px;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 3500px; left: 650px;"></div>
+    <div class="container" style="animation-name: shake; position: absolute; top: 3800px; left: 800px;"></div>
+    <div class="container" style="animation-name: spin; position: absolute; top: 2500px; left: 1750px;"></div>
+
+    <!--for img-->
+    <div class="image">
+        <img src="7.png" class="object" data-speed="5" alt="">
+        <img src="2150853641-removebg-preview.png" class="object" data-speed="3" alt="">
+        <img src="—Pngtree—blockchain technology bitcoin ethereum_3814725.png" class="object" data-speed="5" alt="">
+        <img src="—Pngtree—network bitcoin technology blockchain big_4034259 (1).png" class="object" data-speed="5" alt="">
+        <img src="2150473193-removebg-preview.png" class="object" data-speed="5" alt="">
+        <img src="7125359-removebg-preview.png" class="object" data-speed="5" alt="">
+        <img src="7125360-removebg-preview (1).png" class="object" data-speed="5" alt="">
+        <img src="SL_052321_43220_08-removebg-preview.png" class="object" data-speed="5" alt="">
+        <!--<img src="_Pngtree_network_bitcoin_technology_blockchain_big_4034259__1_-removebg-preview.png" class="object" data-speed="5" alt="">
+        
+       
+        <img src="—Pngtree—network bitcoin technology blockchain big_4034259.png" class="object" data-speed="5" alt="">
+        <img src="4f5311b7-1a6f-459b-b917-18b27abb6beb-removebg-preview.png" class="object" data-speed="5" alt="">
+        
+        <img src="7125360-removebg-preview.png" class="object" data-speed="5" alt="">
+        <img src="2150473193-removebg-preview.png" class="object" data-speed="5" alt="">
+       
+        <img src="2151112573-removebg-preview.png" class="object" data-speed="5" alt="">
+        <img src="f3c476b7-d6ea-4732-aa0d-9bbb2ad37ebd-removebg-preview.png" class="object" data-speed="5" alt="">
+        
+        <img src="vecteezy_3d-cryptocurrency-concept-for-unicorn-image-files-in-nft_8879481-removebg-preview.png" class="object" data-speed="5" alt="">
+        <img src="vecteezy_3d-cryptocurrency-concept-for-unicorn-image-files-in-nft_8879481.png" class="object" data-speed="5" alt="">
+        
+        <img src="pexels-rostislav-uzunov-50116478-removebg-preview.png" class="object" data-speed="5" alt="">-->
+    </div>
+    <!--Chat Container-->
+    <div class="chat-container"></div>
+    <div class="container">
+        <div class="fancy-border"></div>
+    </div>
+    <div class="default-text hidden">
+        <h1>Bitcoin: Unleash the Power of Digital Gold</h1>
+        <p>Experience the power of Bitcoin,<br>the pioneering cryptocurrency that's reshaping the financial landscape. Seamlessly transact across borders, store value securely, and embrace financial sovereignty like never before.</p>
+    </div>
+    <div class="default-text hidden">
+        <h1>Cryptocurrency Investment Strategies: Building Wealth in the Digital Age</h1>
+        <p>Uncover the most effective cryptocurrency investment strategies<br> to build wealth and achieve financial freedom in the digital age. Whether you're a passive investor or an active trader, harness the power of blockchain technology to secure your financial future.</p>
+    </div>
+    <div class="default-text hidden">
+        <h1>Decentralized Finance: Empowering the Masses</h1>
+        <p>Step into the world of decentralized finance (DeFi) <br> unlock financial opportunities for everyone. Say goodbye to traditional banking systems and hello to borderless, permissionless finance.</p>
+    </div>
+    <div class="default-text hidden">
+        <h1>Mining Cryptocurrencies: Unearthing Digital Gold</h1>
+        <p>Embark on a journey into the heart of the blockchain and discover the art of mining cryptocurrencies<br>With every block you solve, you're not just unlocking digital coins, but paving the way for the future of decentralized finance.<br>
+            Dive deep into the world of hashing algorithms, proof-of-work, and consensus mechanisms, and become a miner of the digital age.<br>
+            Experience the thrill of competition as you join mining pools, collaborate with fellow miners, and compete for block rewards.<br>
+            Transform your computational power into financial rewards and contribute to the security and stability of the blockchain network.<br>
+            From Bitcoin to Ethereum and beyond, mining cryptocurrencies offers a gateway to financial freedom and technological empowerment.<br>
+            Unleash your potential and embrace the power of decentralized consensus as you participate in the global network of miners.<br>
+            Join the ranks of pioneers who are shaping the future of money and revolutionizing the way we transact value across the globe.<br>
+            Start your mining journey today and become a part of the decentralized revolution that's changing the world one block at a time.<br>
+            Together, let's unearth the digital gold of the 21st century and build a more inclusive, transparent, and decentralized financial system for all.</p>
+    </div>
+     
+     <!--Typing Container-->
+     <div class="typing-container">
+        <div class="typing-content">
+            <div class="typing-textarea">
+                <textarea id="chat-input" placeholder="Enter a prompt here.." required></textarea>
+                <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+            <div class="typing-contols">
+                <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+                <span id="delete-btn" class="material-symbols-rounded">delete</span>
+            </div>
+        </div>
+     </div>
+
+
+<script type="text/JavaScript">
+   document.addEventListener("mousemove", parallax);
+
+function parallax(e) {
+    const layers = document.querySelectorAll('.object');
+    
+    layers.forEach(layer => {
+        const speed = layer.getAttribute('data-speed');
+
+        const x = (window.innerWidth - e.pageX * speed) / 150;
+        const y = (window.innerHeight - e.pageY * speed) / 150;
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+}
+
+
+
+/*for refresh*/
+function refreshPage() {
+        location.reload();
+    }
+
+    
+
+
+</script>    
+
+
+
+</body>
+</html>

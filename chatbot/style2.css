@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --text-color:#f5ecec;
+    --icon-color:#f9faf3;
+    --icon-hover-bg:#07080e;
+    --placeholder-color:#7e7b7b;
+    --outgoing-chat-bg:transparent;
+    --incoming-chat-bg:transparent;
+    --outgoing-chat-border:none;
+    --incoming-chat-border:none;
+    
+}
+.light-mode {
+    --text-color:#1d05f7;
+    --icon-color:#0606fb8a;
+    --icon-hover-bg:#f1f1f3;
+    --placeholder-color:#9f9f9f;
+    --outgoing-chat-bg: #ffffff;
+    --incoming-chat-bg:#f6f6f6fa;
+    --outgoing-chat-border:#ffffff;
+    --incoming-chat-border:#D9D9E3;
+    
+}
+body{
+    background:black;
+    width: 100%;
+    margin-top: 50px;
+    margin-right:120px;
+   
+
+}
+.container {
+    color: white;
+    position: absolute;
+
+}
+.container::before {
+    position: absolute;
+    bottom: 50%;
+    left: 80%;
+    width: 800px;
+    height: 00px;
+    content: ''
+    ;
+    background-image: linear-gradient(to top right, white, grey);
+}
+
+.nav {
+    background : transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: white solid -10px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0 5px;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px
+    ;
+   
+    color: #000000;
+    transition: 0.2s;
+    display: flex;
+
+}
+
+.nav-menu li {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-menu li a:hover{
+    color: #710bf6;
+    background: #fff;
+    border-radius: 19px;
+    opacity:1;
+}
+/* Styles for Dropdown Menus */
+.nav-menu li.dropdown ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 1s;
+    transform-origin: top;
+}
+
+.nav-menu li.dropdown:hover ul.dropdown-menu {
+    display: block;
+    align-items: center;
+    opacity: 1;
+    animation: slideDown 0.5s forwards;
+    transform: translateY(0);
+    
+    
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px); /* Start from above */
+    }
+    to {
+        transform: translateY(0); /* Slide down to its position */
+    }
+}
+
+.dropdown-menu li {
+    margin: 5px 0; /* Adjust spacing between options */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 5px 10px;
+    transition: background-color 0.5s ease; /* Add transition for background-color */
+}
+
+.dropdown-menu li a:hover {
+    background-color:transparent; 
+}
+
+
+
+.nav-menu li.dropdown ul.dropdown-menu li {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.nav-menu li.dropdown ul.dropdown-menu li a {
+    color: #eee5e5;
+    background-color:transparent;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.nav-menu li.dropdown ul.dropdown-menu li a:hover{
+    color: #090606;
+    background-color: #fbf5f5;
+}
+
+.nav-menu li a {
+    padding: 10px;
+}
+
+
+/* Flowing Container styling */
+.flowing-container {
+    position: fixed;
+    top: 500px; /* Adjust this value to control the starting position */
+    left: 0;
+    width: 100%; /* Cover the full width of the viewport */
+    height: 100%;
+    bottom: 100%; /* Adjust height as needed */
+    border-radius:86% 14% 29% 71% / 49% 46% 54% 51%;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust background color and opacity as needed */
+    animation: flowAnimation 15s linear infinite; /* Adjust animation duration as needed */
+    z-index: -1; /* Ensure it's behind other content */
+
+    opacity: 0.1;
+}
+
+.flowing-one {
+    animation-delay: 0s; /* Adjust delay for each container */
+}
+
+.flowing-two {
+    animation-delay: 5s; /* Adjust delay for each container */
+}
+
+.flowing-three {
+    animation-delay: 10s; /* Adjust delay for each container */
+}
+
+@keyframes flowAnimation {
+    0% {
+        transform: translateY(-50px); /* Start off screen */
+    }
+    100% {
+        transform: translateY(calc(100vh + 50px)); /* Move to just below the bottom of the screen */
+    }
+}
+
+/*pls*/
+.flowingg-container{
+  position: fixed;
+  top: 50px; /* Adjust this value to control the starting position */
+  left: 20%;
+  width: 10%; /* Cover the full width of the viewport */
+  height: 50px; /* Adjust height as needed */
+  border-radius: 86% 14% 29% 71% / 49% 46% 54% 51%;
+  background-color: rgba(245, 241, 241, 0.511); /* Adjust background color and opacity as needed */
+  animation: flowwAnimation 15s linear infinite; /* Adjust animation duration as needed */
+  z-index: -1; /* Ensure it's behind other content */
+  filter: blur(5px);
+  opacity: 0.1;
+}
+
+
+.flowingg-one {
+  animation-delay: 0s; /* Adjust delay for each container */
+}
+
+.flowingg-two {
+  animation-delay: 0s; /* Adjust delay for each container */
+}
+
+.flowingg-three {
+  animation-delay: 0s; /* Adjust delay for each container */
+}
+
+@keyframes flowwAnimation {
+  0% {
+      transform: translateY(-50px); /* Start off screen */
+  }
+  100% {
+      transform: translateY(calc(100vh + 50px)); /* Move to just below the bottom of the screen */
+  }
+}
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: #eff3f6;
+    margin: 20px;
+    display: inline-block;
+    border-radius:86% 14% 29% 71% / 49% 46% 54% 51% ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    opacity: 0.1;
+  }
+
+  /* Animation Styles */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes scaleUp {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes colorChange {
+    0%, 100% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+  }
+
+  @keyframes opacityChange {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  /*img*/
+ 
+   .object:nth-child(2) {
+    position:absolute;
+    left: 20%;
+    top: 15px;
+    width:200px;
+    height: 20%;
+   }
+   .object:nth-child(1) {
+    position: absolute;
+    left: 40%;
+    top: 1900px;
+   }
+   .object:nth-child(3) {
+    position: absolute;
+    left: 90px;
+    top: 2100px;
+   }
+   .object:nth-child(4) {
+    width:350px;
+    position: absolute;
+    left: 100px;
+    top: 2200px;
+   }
+   .object:nth-child(5) {
+    position: absolute;
+    left: 450px;
+    top: 1500px;
+   }
+   .object:nth-child(6) {
+    position: absolute;
+    left: 100px;
+    top: 3500px;
+   }
+   .object:nth-child(7) {
+    position: absolute;
+    left: 400px;
+    top: 3600px;
+   }
+   .object:nth-child(8) {
+    position: absolute;
+    left: 100px;
+    top: 1530px;
+   
+   }
+   .object:nth-child() {
+    position: absolute;
+    left: 100px;
+    top: 1800px;
+   }
+   .object:nth-child() {
+    position: absolute;
+    left: 100px;
+    top: 1800px;
+   }
+
+   /* Styles for Dropdown Description */
+.dropdown-description {
+  position: absolute;
+  top: 315px;
+  left: 0;
+  width: 100%;
+  background-color:transparent;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: top 0.3s ease-in-out;
+}
+
+.dropdown-description.hide {
+  transform: translateY(-100%);
+}
+
+   
+
+
+/* CHat container styling*/
+.chat-container {
+    max-height: 100vh;
+    margin-top: 20%;
+    padding-bottom: 150px;
+    overflow-y: auto;
+}
+:where(.chat-container, textarea)::-webkit-scrollbar{
+    width: 6px;
+
+}
+:where(.chat-container, textarea)::-webkit-scrollbar-track {
+    background: var(--icon-color);
+    border-radius: 25px;
+}    
+:where(.chat-container, textarea)::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 25px;
+}    
+
+
+.default-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 10px;
+    text-align: center;
+    color: var(--text-color);
+  }
+  .default-text h1 {
+    font-size: 3.3rem;
+  }
+  .default-text p {
+    margin-top: 40px;
+    font-size: 1.1rem;
+  }
+
+  .hidden 
+{
+    opacity: 0;
+    filter: blur(5px
+    );
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}   
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    padding: 0 10px;
+    text-align: center;
+    color: var(--text-color);
+  }
+  .hidden1
+{
+    opacity: 0;
+    filter: blur(5px
+    );
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}   
+.chat-container .chat{
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+}
+.chat-container .chat.outgoing{
+    background: var(--outgoing-chat-bg);
+    border: 1px solid var(--outgoing-chat-border);
+    margin-left: 10%;
+}
+.chat-container .chat.incoming{
+    background: var(--incoming-chat-bg);
+    border: 1px solid var(--incoming-chat-border);
+    margin-left: 24%;
+}
+.chat-container .chat.outgoing .light-mode{
+    background: var(--outgoing-chat-bg);
+    border: 1px solid var(--outgoing-chat-border);
+    
+}
+.chat-container .chat.incoming .light-mode{
+    background: var(--incoming-chat-bg);
+    border: 1px solid var(--incoming-chat-border);
+   
+}
+.chat .chat-content{
+    display: flex;
+    min-width: 1200px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 21%;
+}
+
+span.material-symbols-rounded {
+    user-select: none;
+    cursor: pointer;
+}
+
+.chat .chat-content span{
+    font-size: 1.3rem;
+    color: var(--icon-color);
+    visibility: hidden;
+}
+
+
+
+.chat:hover .chat-content span {
+    visibility: visible;
+}
+.chat .chat-details{
+    display: flex;
+    align-items: center;
+}
+.chat .chat-details img {
+    width: 35px;
+    height: 35px;
+    align-self: flex-start;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+.chat .chat-details p {
+    white-space: pre-wrap;
+    font-size: 1.05rem;
+    padding: 0 50px 0 25px;
+    color: var(--text-color);
+    word-break: break-word;
+
+}
+
+.chat .chat-details p.error {
+    color: #e55865;
+  }
+
+span.material-symbols-rounded{
+    user-select: none;
+    cursor: pointer;
+}
+.typing-animation{
+    display: inline-flex;
+    padding-left: 25px;
+}
+.typing-animation .typing-dot{
+    height: 7px;
+    width: 7px;
+    opacity: 0.7;
+    margin: 0 3px;
+    border-radius: 50%;
+    background: var(--text-color);
+    animation: animateDots 1.5s var(--delay) ease-in-out infinite;
+}
+.typing-animation .typing-dot:first-child {
+    margin-left: 0;
+}
+@keyframes animateDots {
+    0%, 44% {
+        transform: translateY(opx);
+    }
+    28% {
+        opacity: 0.4;
+        transform: translateY(-6px
+        );
+    }
+    44% {
+        opacity: 0.2;
+    }
+
+}
+
+/*Typing Container styling */
+.typing-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 10px ;
+    justify-content: center;
+    background: var(--outgoing-chat-bg);
+    border: 1px solid var(--incoming-chat-border);
+
+}
+.typing-container.light-mode {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    display: flex;
+    padding: 20px 10px ;
+    justify-content: center;
+    background: var(--outgoing-chat-bg);
+    border: 1px solid var(--incoming-chat-border);
+
+}
+.typing-container .typing-content {
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+
+}
+.typing-content .typing-textarea {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.typing-textarea textarea {
+    width: 100%;
+    height: 55px;
+    border: none;
+    resize: none;
+    font-size:  1rem; 
+    border-radius: 4px;
+    color: var(--text-color);
+    padding: 15px 45px 15px 20px;
+    max-height: 250px;
+    overflow-y: auto;
+    background:black;
+    outline: 1px solid ;
+}
+.typing-textarea textarea::placeholder {
+    color: var(--placeholder-color);
+}
+.typing-content span {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    border-radius: 4px;
+    font-size: 1.35rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+}
+
+.typing-textarea span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+
+}
+.typing-textarea textarea:valid ~ span {
+    visibility: visible;
+}
+
+
+.typing-content span {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+
+}
+
+.typing-contols {
+    display: flex;
+}
+.typing-contols span {
+    margin-left: 7px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background: var(--incoming-chat-bg);
+    border: 1px solid var(--incoming-chat-border);
+
+}
+.typing-controls span:hover {
+    background: var(--icon-hover-bg);
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #1105f9; /* Adjust the color as needed */
+    margin-top: 50px;
+    margin-right: 300px;
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.meteor {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fffffd; /* Meteor color */
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: meteorAnimation 5s linear infinite;
+}
+
+.meteor1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+
+  background-color: #fffffd; /* Meteor color */
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: meteorAnimation 3s linear infinite;
+}
+
+@keyframes meteorAnimation {
+  0% {
+    transform: translateY(-100px) translateX(-100%);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px)) translateX(calc(100vw + 100px));
+    opacity: 0.7;
+  }
+}
+
+
+
+  /* Reponsive Media Query */
+@media screen and (max-width: 600px) {
+    .default-text h1 {
+      font-size: 2.3rem;
+    }
+    :where(.default-text p, textarea, .chat p) {
+      font-size: 0.95rem!important;
+    }
+    .chat-container .chat {
+      padding: 20px 10px;
+    }
+    .chat-container .chat img {
+      height: 32px;
+      width: 32px;
+    }
+    .chat-container .chat p {
+      padding: 0 20px;
+    }
+    .chat .chat-content:not(:has(.typing-animation), :has(.error)) span {
+      visibility: visible;
+    }
+    .typing-container {
+      padding: 15px 10px;
+    }
+    .typing-textarea textarea {
+      height: 45px;
+      padding: 10px 40px 10px 10px;
+    }
+    .typing-content span {
+      height: 45px;
+      width: 45px;
+      margin-left: 5px;
+    }
+    span.material-symbols-rounded {
+      font-size: 1.25rem!important;
+    }
+  }
